@@ -1,0 +1,85 @@
+
+
+
+
+.header_block{
+  position: sticky;
+  top: 0;
+  margin: auto;
+  height: 64px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: hsla(0,0%,100%,0.3);
+  transition: .5s;
+  z-index: 1001;
+  opacity: 1;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 2px 20px;
+  .header_right_block{
+    text-align:center;
+    padding: 5px;
+  }
+  .header_left_block{
+    justify-content: end;
+    text-align: end;
+    padding: 5px 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+
+
+.menu_Block{
+  background: white;
+  display: contents;
+  direction: rtl;
+  height: max-content;
+  font-family: 'Yekan';
+  font-size: 16px;
+  flex-direction: column;
+  z-index: 100;
+  animation: fadeInDown;
+  .menu_block_close_btn{
+    font-size: 30px;
+    text-align: end;
+    padding: 10px 0;
+  }
+  ul{
+    padding: 0 30px 0 0;
+    cursor: pointer;
+    margin-top: 25px;
+    .divider{
+      border-bottom: 1px solid #dfe1e4;
+      width: 80%;
+      margin-bottom: 10px;
+    }
+    li{
+      list-style-type: none;
+      padding: 5px 0;
+    }
+  }
+  .zarin_block{
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    padding: 15px 30px;
+    .zarin_btn{
+      background-color: rgba(232,239,254,.6);
+      cursor: pointer;
+      color: #28457b !important;
+      padding: 7px 28px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}
+
