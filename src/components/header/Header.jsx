@@ -3,14 +3,15 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft, faBars} from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/pics/logo-white.svg";
 import {useState} from "react";
-import "./headerStayles.scss"
+import "./header.stayle.scss"
+import DesktopMenu from "../DesktopMenu/DesktopMenu";
 
 const Header = () => {
     const [show, setShow] = useState(false);
     const handleShow = () => setShow(true);
     const handleClose = () => setShow(false);
   return(
-      <Container dir={"rtl"}>
+      <Container style={{height:'100%'}} dir={"rtl"}>
           <Row className={'menu_Block'}>
               <Offcanvas placement={"top"} show={show} onHide={handleClose}>
                   <Offcanvas.Header closeButton>
@@ -38,14 +39,17 @@ const Header = () => {
               </Offcanvas>
           </Row>
           <Row className={'header_block'}>
-              <Col className={'header_right_block'} xs={6}>
+              <Col className={'header_right_block text-md-start'} sm={4} xs={6}>
                   <a href={'#'}>
                       <img src={Logo} alt={"Logo"}/>
                   </a>
               </Col>
-              <Col className={'header_left_block'} xs={6}>
-                  <div style={{backgroundColor:'none'}} onClick={handleShow} >
+              <Col className={'header_left_block'} sm={8} xs={6}>
+                  <div className={'d-sm-none'} style={{backgroundColor:'none'}} onClick={handleShow} >
                       <FontAwesomeIcon icon={faBars}/>
+                  </div>
+                  <div className={'d-sm-block d-none'}>
+                      <DesktopMenu/>
                   </div>
               </Col>
           </Row>
