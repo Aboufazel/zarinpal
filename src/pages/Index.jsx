@@ -5,8 +5,9 @@ import BlueBox from "../components/blueBox/BlueBox";
 const Index = () => {
 
     return (
-        <Container>
+        <Container fluid>
             <Header/>
+            <BlueBox/>
         </Container>
     )
 }
