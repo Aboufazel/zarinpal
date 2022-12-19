@@ -7,8 +7,6 @@ const Index = () => {
 
     return (
         <Container fluid>
-            <Header/>
-            <BlueBox/>
             <SecondaryBlock/>
         </Container>
     )

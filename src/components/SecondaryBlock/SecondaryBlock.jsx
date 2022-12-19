@@ -1,8 +1,8 @@
-import {Col, Container, Row} from "react-bootstrap";
+import {Col, Container, Offcanvas, Row} from "react-bootstrap";
 import pay from "../../assets/pics/pg.svg"
 import "./SecondaryBlock.style.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
+import {faArrowLeft, faBars} from "@fortawesome/free-solid-svg-icons";
 import social from '../../assets/pics/social-image.svg';
 import zarinCard from '../../assets/pics/zarincard .svg';
 import payout from '../../assets/pics/payout.svg';
@@ -10,13 +10,61 @@ import zarinPlus from '../../assets/pics/zarinplus.svg';
 import verified from '../../assets/pics/verifiedIcon.svg';
 import support  from '../../assets/pics/support.svg';
 import splite  from '../../assets/pics/splite.svg';
+import Logo from "../../assets/pics/logo-white.svg";
+import DesktopMenu from "../DesktopMenu/DesktopMenu";
+import {useState} from "react";
+import BlueBox from "../blueBox/BlueBox";
 
 
 
 const SecondaryBlock = () => {
-
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
     return(
         <Container dir={'rtl'}>
+            <Row className={'menu_Block'}>
+                <Offcanvas placement={"top"} show={show} onHide={handleClose}>
+                    <Offcanvas.Header closeButton>
+                    </Offcanvas.Header>
+                    <Row className={'menu_Block'}>
+                        <Col xs={12}>
+                            <ul>
+                                <li>{"تعرفه‌ها"}</li>
+                                <li>{"اپلیکیشن"}</li>
+                                <li className={'divider'}></li>
+                                <li>{"سوالات متداول"}</li>
+                                <li>{"محصولات"}</li>
+                                <li>{"تماس با ما"}</li>
+                            </ul>
+                        </Col>
+                        <Row className={'zarin_block'}>
+                            <Col xs={7}>
+                                <div className={'zarin_btn'}>
+                                    {"زرین‌پال من"}
+                                    <FontAwesomeIcon icon={faArrowLeft}/>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Row>
+                </Offcanvas>
+            </Row>
+            <Row className={'header_block'}>
+                <Col className={'header_right_block text-md-start'} sm={4} xs={6}>
+                    <a href={'#'}>
+                        <img src={Logo} alt={"Logo"}/>
+                    </a>
+                </Col>
+                <Col className={'header_left_block'} sm={8} xs={6}>
+                    <div className={'d-sm-none'} style={{backgroundColor:'none'}} onClick={handleShow} >
+                        <FontAwesomeIcon icon={faBars}/>
+                    </div>
+                    <div className={'d-sm-block d-none'}>
+                        <DesktopMenu/>
+                    </div>
+                </Col>
+            </Row>
+            <BlueBox/>
             <Row className={'margin_top70 margin_bottom75'}>
                 <Col lg={6} md={12} className={'d-none d-lg-block d-md-block'}>
                     <div className={'d-flex justify-content-center pic_block'}>
@@ -24,7 +72,7 @@ const SecondaryBlock = () => {
                     </div>
                 </Col>
                 <Col className={'content_block'} lg={6} md={12} sm={12}>
-                  <div className={'d-flex flex-column margin40 text-sm-justify justify-content-center'}>
+                  <div className={'pt-4 d-flex flex-column margin40 text-sm-justify justify-content-center'}>
                       <h2>
                           {'درگاه پرداخت اینترنتی'}
                       </h2>
@@ -52,7 +100,7 @@ const SecondaryBlock = () => {
             </Row>
             <Row className={'margin_top70 margin_bottom75'}>
                 <Col lg={6} md={12} className={'content_block d-none d-lg-block d-md-block'}>
-                    <div className={'margin40 d-flex flex-column text-sm-justify justify-content-center'}>
+                    <div className={'pt-5 margin40 d-flex flex-column text-sm-justify justify-content-center'}>
                         <h2>
                             {'زرین لینک'}
                         </h2>

@@ -144,7 +144,7 @@
 }
 
 .detail_block{
-  margin-top: 5px;
+
   font-family: 'Yekan';
   h2{
     @media screen and (max-width: 430px){
@@ -161,6 +161,7 @@
     margin-top: 48px;
     @media screen and (max-width: 1030px){
       max-width: none;
+      margin-top: 0;
     }
     @media screen and (max-width: 430px){
       padding-right: 30px !important;
@@ -168,7 +169,7 @@
     }
     max-width: 320px;
     padding-bottom: 20px;
-    line-height: 40px;
+    line-height: 25px;
     color: #303030;
     text-align: justify;
     font-size: 13px;
