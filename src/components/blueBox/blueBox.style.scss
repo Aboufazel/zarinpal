@@ -1,3 +1,12 @@
+.cover{
+  @media screen and (max-width: 770px){
+    background-image: none;
+  }
+  background-image: url("../../assets/pics/wave.svg");
+  background-repeat: no-repeat;
+
+}
+
 .blue_box_block{
   position: relative;
   font-family: 'Yekan';
@@ -5,9 +14,11 @@
   font-size: 14px;
   font-weight: 500;
   color: white;
-  padding: 45px 20px 85px;
   line-height: 40px;
   border-radius: 20px;
+  .custom_padding{
+    padding: 85px 50px;
+  }
   @media screen and (max-width: 430px){
     span{
       font-weight: 900 !important;
