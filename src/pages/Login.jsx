@@ -15,7 +15,7 @@ const Login = () => {
                         <Row className={'ps-0'}>
                             <Col className={'p-4'} lg={5} md={12}>
                                 <Row className={' mb-5'}>
-                                    <a href={'#'}>
+                                    <a href={'/'}>
                                         <img  src={Logo} alt={"Logo"}/>
                                     </a>
                                 </Row>
