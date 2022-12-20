@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap-grid.css';
 import 'bootstrap/dist/css/bootstrap.rtl.css';
-
+import "swiper/css/bundle";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
