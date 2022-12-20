@@ -12,7 +12,7 @@ const BlueBox = () => {
             <Row className={"m-0 p-0 blue_box_block"}>
                 <Row className={'m-0 p-0 cover'}>
                     <Col
-                        className={'custom_padding d-sm-flex text-sm-center justify-content-lg-start text-lg-start flex-column justify-content-center'}
+                        className={'custom_padding d-xxl-flex justify-content-xxl-center d-sm-flex text-sm-center justify-content-lg-start text-lg-start flex-column justify-content-center'}
                         xs={12}
                         lg={6}>
                         <div>
