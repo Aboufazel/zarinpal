@@ -1,14 +1,21 @@
 import {Button, Col, Container, Row} from "react-bootstrap";
 import './login.style.scss'
 import Logo from "../assets/pics/logo-white.svg";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Slider from "../components/Swiper/Slider";
 import LoginInput from "../components/Formik/LoginInput";
 
 const Login = () => {
+    const [loading , setLoading] = useState(true)
+    useEffect(()=>{
+        setTimeout(()=>{
+            setLoading(false);
+        } , 2000)
+    } , [])
 
     return (
-        <Container dir={'rtl'} className={'d-flex align-items-center justify-content-center w-100'} style={{height:'100vh'}}>
+
+           loading === true ? "...loading" : <Container dir={'rtl'} className={'d-flex align-items-center justify-content-center w-100'} style={{height:'100vh'}}>
             <div className={'m-3'} style={{width: '938px'}}>
                 <Row className={'d-flex align-items-center justify-content-center'}>
                     <Col className={'login_block'} lg={11} md={6}>
@@ -31,9 +38,9 @@ const Login = () => {
                                     <LoginInput/>
                                 </Row>
                                 <Row className={'p-4 d-flex justify-content-end'}>
-                                  <Button className={'login_button'}>
-                                      {'تایید و ادامه'}
-                                  </Button>
+                                    <Button className={'login_button'}>
+                                        {'تایید و ادامه'}
+                                    </Button>
                                 </Row>
                             </Col>
                             <Col lg={7} className={'ps-0 d-none d-lg-block'}>
@@ -44,6 +51,8 @@ const Login = () => {
                 </Row>
             </div>
         </Container>
+
+
 
     )
 }
