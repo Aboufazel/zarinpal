@@ -1,8 +1,9 @@
-import {Col, Container, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import './login.style.scss'
 import Logo from "../assets/pics/logo-white.svg";
 import React from "react";
 import Slider from "../components/Swiper/Slider";
+import LoginInput from "../components/Formik/LoginInput";
 
 const Login = () => {
 
@@ -26,8 +27,16 @@ const Login = () => {
                                         شوید.<span>در صورت نداشتن حساب کاربری</span><span
                                             className="link_color"> ثبت‌‌نام</span><span> کنید.</span></p>
                                 </Row>
+                                <Row className={'p-2'}>
+                                    <LoginInput/>
+                                </Row>
+                                <Row className={'p-4 d-flex justify-content-end'}>
+                                  <Button className={'login_button'}>
+                                      {'تایید و ادامه'}
+                                  </Button>
+                                </Row>
                             </Col>
-                            <Col lg={7} className={'d-none d-lg-block'}>
+                            <Col lg={7} className={'ps-0 d-none d-lg-block'}>
                                 <Slider/>
                             </Col>
                         </Row>

@@ -7,7 +7,7 @@ const Slider = () => {
 
     return (
         <>
-            <Carousel  controls={false} style={{marginLeft:0 , paddingLeft:0}}>
+            <Carousel controls={false} style={{marginLeft:0 , paddingLeft:0}}>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
