@@ -4,6 +4,7 @@ import Logo from "../assets/pics/logo-white.svg";
 import React, {useEffect, useState} from "react";
 import Slider from "../components/Swiper/Slider";
 import LoginInput from "../components/Formik/LoginInput";
+import Loading from "../components/Loading/Loading";
 
 const Login = () => {
     const [loading , setLoading] = useState(true)
@@ -15,7 +16,7 @@ const Login = () => {
 
     return (
 
-           loading === true ? "...loading" : <Container dir={'rtl'} className={'d-flex align-items-center justify-content-center w-100'} style={{height:'100vh'}}>
+           loading === true ? <Loading/> : <Container dir={'rtl'} className={'d-flex align-items-center justify-content-center w-100'} style={{height:'100vh'}}>
             <div className={'m-3'} style={{width: '938px'}}>
                 <Row className={'d-flex align-items-center justify-content-center'}>
                     <Col className={'login_block'} lg={11} md={6}>

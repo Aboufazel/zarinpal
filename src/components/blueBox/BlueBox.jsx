@@ -33,10 +33,10 @@ const BlueBox = () => {
                         <Row>
                             <Col xs={12}
                                  className={'d-flex flex-row mt-1 justify-content-lg-start justify-content-center gap-2'}>
-                                <Button className={'register_btn'}>
+                                <Button href={'/login'} className={'register_btn'}>
                                     {"ثبت نام"}
                                 </Button>
-                                <Button className={'login_btn'}>
+                                <Button href={'/login'} className={'login_btn'}>
                                     {"ورود"}
                                 </Button>
                             </Col>
