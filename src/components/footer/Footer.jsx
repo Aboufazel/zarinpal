@@ -140,7 +140,7 @@ const Footer = () => {
                     <Row>
                         <Col className={'d-flex flex-column mt-md-2 mb-5 mt-3 align-items-center justify-content-center'}>
                             <img className={'d-md-flex d-lg-none enamad'} src={enamad} alt={'enamad'}/>
-                            <span style={{fontWeight:200 , fontSize:'14px'}}>© ‌‌زرین‌پال ۱۴۰۱-۱۳۸۹</span>
+                            <span className={'mt-lg-5'} style={{fontWeight:200 , fontSize:'14px'}}>© ‌‌زرین‌پال ۱۴۰۱-۱۳۸۹</span>
                         </Col>
                     </Row>
                 </Row>
