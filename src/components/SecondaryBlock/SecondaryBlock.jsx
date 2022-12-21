@@ -264,7 +264,7 @@ const SecondaryBlock = () => {
                                     </td>
                                     <td>
                                         <Row>
-                                            <Col style={{marginTop:0 , marginBottom:0, marginRight:25}} lg={10} className={'d-flex flex-column info_block'}>
+                                            <Col style={{marginTop:0 , marginBottom:0, marginRight:60}} lg={10} className={'d-flex flex-column info_block'}>
                                                 <div className={'d-flex align-items-center'}>
                                                     <img src={splite} alt={'verfication'}/>
                                                     <span>
@@ -281,7 +281,7 @@ const SecondaryBlock = () => {
                                 <tr>
                                     <td style={{borderBottom: "none", borderRight: "none"}}>
                                         <Row>
-                                            <Col style={{marginTop:0 , marginBottom:0, marginRight:25}} lg={10} className={'mt-3 info_block'}>
+                                            <Col style={{marginTop:0 , marginRight:25}} lg={10} className={'mt-3 info_block'}>
                                                 <div className={'d-flex align-items-center'}>
                                                     <img src={support} alt={'verfication'}/>
                                                     <span>
@@ -296,7 +296,7 @@ const SecondaryBlock = () => {
                                     </td>
                                     <td style={{borderBottom: "none"}}>
                                         <Row>
-                                            <Col style={{marginTop:0 , marginBottom:0 , marginRight:25}} lg={10} className={'d-flex flex-column mt-3 info_block'}>
+                                            <Col style={{marginTop:0  , marginRight:60}} lg={10} className={'d-flex flex-column mt-3 info_block'}>
                                                 <div className={'d-flex align-items-center'}>
                                                     <img src={support} alt={'verfication'}/>
                                                     <span>
