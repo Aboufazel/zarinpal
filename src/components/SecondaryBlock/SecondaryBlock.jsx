@@ -293,7 +293,7 @@ const SecondaryBlock = () => {
                        </Row>
                    </Col>
                </Row>
-               <Row>
+               <Row className={'m-1'}>
                    <Col lg={12} md={12} sm={12} className={'zarin_start_block d-flex flex-column align-items-center justify-content-center'}>
                     <span>
                         {"به خانواده‌ی یک میلیونی زرین‌پال بپیوندید."}

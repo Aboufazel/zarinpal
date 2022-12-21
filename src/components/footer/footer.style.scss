@@ -1,0 +1,83 @@
+.footer_block{
+  margin-top: 150px;
+  background: white;
+  border-top: 1px solid #dfe1e4;
+  @media screen and (max-width: 426px){
+    border-top: none;
+  }
+  p{
+    font-size: 14px;
+    font-weight: 900;
+  }
+  span{
+    font-weight: 900;
+  }
+  .phone-number{
+    color: #21457f;
+    margin-right: 13px;
+  }
+  font-family: 'Yekan';
+  @media screen and (max-width:426px){
+    padding:20px 45px !important;
+  }
+  @media screen and (min-width: 768px){
+    padding:40px 30px !important;
+  }
+  @media screen and (max-width:1024px){
+    padding:20px 42px !important;
+  }
+  .footer_support_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 900;
+    background: #fbf6f1;
+    width: max-content;
+    color: #21457f;
+    padding: 0 20px;
+    margin:28px 0;
+    border-radius: 24px;
+    height: 40px;
+    right: -17px;
+  }
+  .footer_menu_fontsize{
+    font-size: 14px;
+    @media screen and (min-width: 768px){
+      font-size: 16px;
+    }
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+    line-height: 30px;
+    li{
+      font-weight: 500;
+      font-size: 14px;
+      @media screen and (min-width: 768px){
+        line-height: 30px !important;
+        font-size: 16px !important;
+        margin: 8px 0;
+      }
+    }
+  }
+
+  .social_icon{
+    background-color: rgba(208, 217, 255,0.5);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    img{
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .enamad{
+    width: 78px;
+    height: auto;
+  }
+}

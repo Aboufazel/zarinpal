@@ -215,20 +215,33 @@
   border-radius: 20px;
   padding: 40px 0;
   span{
+    @media screen and (max-width:376px){
+      font-size: 15px !important;
+      font-weight: 900;
+      padding: 0;
+    }
     @media screen and (max-width:426px){
-        font-size: 17px !important;
+      font-size: 20px !important;
+      font-weight: 900;
+      padding: 0;
     }
     color: #303030;
     font-size: 28px;
     font-weight: bold;
   }
   p{
+    @media screen and (max-width:376px){
+      font-size: 13px !important;
+      font-weight: 500;
+      padding: 0;
+    }
     @media screen and (max-width:426px){
-      font-size: 12px !important;
+      font-size: 16px !important;
+      padding: 0;
     }
     margin-top: 9px;
     color: #747480;
-    font-size: 18px;
+    font-size: 22px;
   }
   .golden_btn{
     background: transparent linear-gradient(270deg,#ffd900,#ffe422) 0 0 no-repeat padding-box;
