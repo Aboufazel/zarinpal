@@ -14,6 +14,7 @@ import Logo from "../../assets/pics/logo-white.svg";
 import DesktopMenu from "../DesktopMenu/DesktopMenu";
 import {useState} from "react";
 import BlueBox from "../blueBox/BlueBox";
+import Footer from "../footer/Footer";
 
 
 
@@ -86,7 +87,7 @@ const SecondaryBlock = () => {
                                </p>
                            </div>
                            <Row className={'mb-3'}>
-                               <Col md={12} className={''}>
+                               <Col md={12} className={'d-flex flex-column flex-md-row'}>
                                    <div className={'golden_btn'}>
                                        {'ساخت درگاه پرداخت'}
                                    </div>
@@ -114,7 +115,7 @@ const SecondaryBlock = () => {
                                </p>
                            </div>
                            <Row className={'mb-3'}>
-                               <Col md={12} className={''}>
+                               <Col md={12} className={'d-flex flex-column flex-md-row'}>
                                    <div className={'golden_btn'}>
                                        {'ساخت درگاه پرداخت'}
                                    </div>
@@ -152,7 +153,7 @@ const SecondaryBlock = () => {
                                </p>
                            </div>
                            <Row className={'mb-3'}>
-                               <Col md={12} className={''}>
+                               <Col md={12} className={'d-flex flex-column flex-md-row'}>
                                    <div className={'golden_btn'}>
                                        {'درخواست زرین کارت'}
                                    </div>
@@ -166,7 +167,7 @@ const SecondaryBlock = () => {
                    </Col>
                </Row>
                <Row className={'margin_top70 margin_bottom75'}>
-                   <Col lg={6} md={12} className={'content_block d-none d-lg-block d-md-block'}>
+                   <Col lg={6} md={12} className={'content_block d-lg-block d-md-block'}>
                        <div className={'margin100 d-flex flex-column text-sm-justify justify-content-center'}>
                            <h2>
                                {'تسهیم'}
@@ -180,8 +181,8 @@ const SecondaryBlock = () => {
                                </p>
                            </div>
                            <Row className={'mb-3'}>
-                               <Col md={12} className={''}>
-                                   <div className={'golden_btn'}>
+                               <Col md={12} className={'d-flex flex-column flex-md-row'}>
+                                   <div style={{width:'177px'}} className={'golden_btn'}>
                                        {'درخواست فعال‌سازی تسهیم'}
                                    </div>
                                    <div className={'read_more_btn'}>
@@ -218,7 +219,7 @@ const SecondaryBlock = () => {
                                </p>
                            </div>
                            <Row className={'mb-3'}>
-                               <Col md={12} className={''}>
+                               <Col md={12} className={'d-flex flex-column flex-md-row'}>
                                    <div className={'golden_btn'}>
                                        {'پیوستن با زرین پلاس'}
                                    </div>
@@ -320,6 +321,7 @@ const SecondaryBlock = () => {
                    </Col>
                </Row>
            </Container>
+           <Footer/>
        </div>
     )
 }

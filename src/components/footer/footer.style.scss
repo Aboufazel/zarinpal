@@ -1,9 +1,8 @@
 .footer_block{
-  margin-top: 150px;
   background: white;
   border-top: 1px solid #dfe1e4;
-  @media screen and (max-width: 426px){
-    border-top: none;
+  @media screen and (min-width: 426px){
+    border-top: none !important;
   }
   p{
     font-size: 14px;
