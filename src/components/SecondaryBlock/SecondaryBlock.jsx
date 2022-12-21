@@ -23,7 +23,7 @@ const SecondaryBlock = () => {
     const handleClose = () => setShow(false);
     return (
         <div className={'w-100 h-100'} style={{backgroundColor: "white"}}>
-            <Container dir={'rtl'}>
+            <Container fluid dir={'rtl'}>
                 <Row className={'menu_Block'}>
                     <Offcanvas placement={"top"} show={show} onHide={handleClose}>
                         <Offcanvas.Header closeButton>
