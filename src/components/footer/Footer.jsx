@@ -110,7 +110,7 @@ const Footer = () => {
                             </ul>
                         </Col>
                         <Col xs={12} md={12} lg={4} xl={4} xxl={4} className={'d-flex flex-column align-items-md-start align-items-center'}>
-                            <p>
+                            <p className={'footer_menu_fontsize'}>
                                 {'زرین پال در شبکه های اجتماعی:'}
                             </p>
                             <Row className={'d-flex flex-column'}>
