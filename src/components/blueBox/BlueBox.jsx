@@ -7,7 +7,7 @@ import {faArrowDown} from "@fortawesome/free-solid-svg-icons";
 const BlueBox = () => {
 
     return (
-        <Container dir={'rtl'}>
+        <Container fluid className={'m-0 p-0 '} dir={'rtl'}>
 
             <Row className={"m-0 p-0 blue_box_block"}>
                 <Row className={'m-0 p-0 cover'}>
