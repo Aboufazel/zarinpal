@@ -41,10 +41,10 @@ const SecondaryBlock = () => {
                            </Col>
                            <Row className={'zarin_block'}>
                                <Col xs={7}>
-                                   <div className={'zarin_btn'}>
+                                   <a href={'/login'} className={'zarin_btn'}>
                                        {"زرین‌پال من"}
                                        <FontAwesomeIcon icon={faArrowLeft}/>
-                                   </div>
+                                   </a>
                                </Col>
                            </Row>
                        </Row>
@@ -66,7 +66,7 @@ const SecondaryBlock = () => {
                    </Col>
                </Row>
                <BlueBox/>
-               <Row className={'margin_top70 margin_bottom75'}>
+               <Row id={'first_block'} className={'margin_top70 margin_bottom75'}>
                    <Col lg={6} md={12} className={'d-none d-lg-block d-md-block'}>
                        <div className={'d-flex justify-content-center pic_block'}>
                            <img src={pay} alt={'pay'}/>

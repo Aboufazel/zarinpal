@@ -12,14 +12,17 @@
   font-family: 'Yekan';
   background: linear-gradient(135deg,#21254e,#2b4a83);
   font-size: 14px;
+  @media screen and (width: 768px) {
+   font-size: 16px;
+  }
   font-weight: 500;
   color: white;
   line-height: 40px;
   border-radius: 20px;
   .custom_padding{
-    padding: 85px 69px;
+    padding: 85px 69px 85px 69px;
     @media screen and (max-width:1025px){
-      padding: 85px 33px;
+      padding: 85px 33px 85px 33px;
     }
   }
   @media screen and (max-width: 430px){

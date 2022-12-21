@@ -48,9 +48,11 @@ const BlueBox = () => {
                 </Row>
             </Row>
             <Row>
-                <Col xs={12} className={'arrow_block'}>
-                    <FontAwesomeIcon icon={faArrowDown} style={{marginTop:15}}/>
-                </Col>
+                <a href={'#first_block'}>
+                    <Col xs={12} className={'arrow_block'}>
+                        <FontAwesomeIcon icon={faArrowDown} style={{color:"black",marginTop:15}}/>
+                    </Col>
+                </a>
             </Row>
 
         </Container>)

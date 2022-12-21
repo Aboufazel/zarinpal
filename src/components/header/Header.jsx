@@ -11,7 +11,7 @@ const Header = () => {
     const handleShow = () => setShow(true);
     const handleClose = () => setShow(false);
   return(
-      <Container style={{height:'100%'}} dir={"rtl"}>
+      <Container fluid style={{height:'100%'}} dir={"rtl"}>
           <Row className={'menu_Block'}>
               <Offcanvas placement={"top"} show={show} onHide={handleClose}>
                   <Offcanvas.Header closeButton>
@@ -29,10 +29,10 @@ const Header = () => {
                       </Col>
                       <Row className={'zarin_block'}>
                           <Col xs={7}>
-                              <div className={'zarin_btn'}>
+                              <a href={'/login'} className={'zarin_btn'}>
                                   {"زرین‌پال من"}
                                   <FontAwesomeIcon icon={faArrowLeft}/>
-                              </div>
+                              </a>
                           </Col>
                       </Row>
                   </Row>

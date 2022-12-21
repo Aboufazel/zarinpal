@@ -6,13 +6,12 @@
   position: sticky;
   top: 0;
   margin: auto;
-  height: 64px;
+  height: 75px;
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(0,0,0,.1);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   background-color: hsla(0,0%,100%,0.3);
-  transition: .5s;
+  transition: 1s !important;
   z-index: 1001;
   opacity: 1;
   right: 0;
@@ -69,6 +68,7 @@
     padding: 15px 30px;
     .zarin_btn{
       background-color: rgba(232,239,254,.6);
+      text-decoration: none;
       cursor: pointer;
       color: #28457b !important;
       padding: 7px 28px;
@@ -81,3 +81,70 @@
   }
 }
 
+
+.more_subMenu{
+  background: white;
+  font-family: 'Yekan';
+  position:absolute;
+  min-width: 123px;
+  height: max-content;
+  font-size: 14px;
+  left: 135px;
+  text-align: right;
+  border-bottom: 1px solid hsla(0,0%,100%,.07);
+  border-radius: 12px;
+  border-top: 5px solid #f8e88b;
+  @media screen and (width: 768px){
+    left:13px;
+  }
+  @media screen and (width: 1440px){
+    left:200px;
+  }
+  @media screen and (width: 2560px){
+    left:190px;
+  }
+  top:52px;
+  padding-top: 5px;
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      margin: 20px 0;
+    }
+  }
+}
+
+.product_subMenu{
+  font-family: 'Yekan';
+  transition: all .3s ease-in-out;
+  position: absolute;
+  min-width: 372px;
+  height: max-content;
+  top:52px;
+  padding-top: 20px;
+  left: 400px;
+  @media screen and (width: 768px){
+    left: 200px;
+  }
+  text-align: right;
+  background-color: #fff;
+  border-bottom: 1px solid hsla(0,0%,100%,.07);
+  border-radius: 12px;
+  border-top: 5px solid #f8e88b;
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      p{
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+      }
+      span{
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
