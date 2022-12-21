@@ -3,6 +3,7 @@ import "./blueBox.style.scss"
 import Home from '../../assets/pics/home.svg'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowDown} from "@fortawesome/free-solid-svg-icons";
+import arrowDown from '../../assets/pics/arrow-down.svg'
 
 const BlueBox = () => {
 
@@ -50,7 +51,7 @@ const BlueBox = () => {
             <Row>
                 <a href={'#first_block'}>
                     <Col xs={12} className={'arrow_block'}>
-                        <FontAwesomeIcon icon={faArrowDown} style={{color:"black",marginTop:15}}/>
+                        <img style={{width:'18px' , height:'18px' , marginTop:20}} src={arrowDown} alt={'arrow'}/>
                     </Col>
                 </a>
             </Row>
