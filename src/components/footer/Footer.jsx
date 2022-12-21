@@ -11,7 +11,7 @@ import enamad from '../../assets/pics/social/enamad-logo.png'
 
 const Footer = () => {
     return (
-        <Container fluid dir={'rtl'} className={'pt-5 footer_block'}>
+        <Container dir={'rtl'} className={'pt-5 footer_block'}>
             <div>
                 <Row className={'d-md-none d-xxl-none d-lg-none d-block'}>
                     <Col>
